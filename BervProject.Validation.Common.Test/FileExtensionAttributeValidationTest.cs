@@ -46,10 +46,8 @@ namespace BervProject.Validation.Common.Test
         [Fact]
         public void NullFileTest()
         {
-            var fileMock = new Mock<IFormFile>();
             var attributeValidator = new FileExtensionAttributeValidation(allowedExtension);
-            var fileObject = fileMock.Object;
-            var validResult = attributeValidator.IsValid(fileObject);
+            var validResult = attributeValidator.IsValid(null);
             Assert.False(validResult);
         }
 
