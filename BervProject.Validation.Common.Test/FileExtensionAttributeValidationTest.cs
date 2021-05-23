@@ -42,5 +42,24 @@ namespace BervProject.Validation.Common.Test
             var validResult = attributeValidator.IsValid(fileObject);
             Assert.False(validResult);
         }
+
+        [Fact]
+        public void NullFileTest()
+        {
+            var fileMock = new Mock<IFormFile>();
+            var attributeValidator = new FileExtensionAttributeValidation(allowedExtension);
+            var fileObject = fileMock.Object;
+            var validResult = attributeValidator.IsValid(fileObject);
+            Assert.False(validResult);
+        }
+
+        [Fact]
+        public void InjectAnotherTypeTest()
+        {
+            var anotherObject = "hello";
+            var attributeValidator = new FileExtensionAttributeValidation(allowedExtension);
+            var validResult = attributeValidator.IsValid(anotherObject);
+            Assert.False(validResult);
+        }
     }
 }
