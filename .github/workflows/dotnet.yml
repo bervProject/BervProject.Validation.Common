@@ -23,6 +23,7 @@ jobs:
       uses: codecov/codecov-action@v2
   publish:
     runs-on: ubuntu-20.04
+    if: ${{ github.event_name == 'push' }}
     steps:
     - name: publish on version change
       id: publish_nuget
