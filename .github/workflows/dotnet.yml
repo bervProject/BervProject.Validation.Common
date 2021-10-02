@@ -23,6 +23,7 @@ jobs:
       uses: codecov/codecov-action@v2
   publish:
     runs-on: ubuntu-20.04
+    needs: build
     if: ${{ github.event_name == 'push' }}
     steps:
     - uses: actions/checkout@v2
