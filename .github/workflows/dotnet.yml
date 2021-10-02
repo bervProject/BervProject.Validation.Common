@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-20.04
     if: ${{ github.event_name == 'push' }}
     steps:
+    - uses: actions/checkout@v2
     - name: publish on version change
       id: publish_nuget
       uses: rohith/publish-nuget@v2
