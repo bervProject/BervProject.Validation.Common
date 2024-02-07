@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,45,133,70"/>
-<area shape="rect" id="node2" href="$classBervProject_1_1Validation_1_1Common_1_1AllowedContentTypeAttribute.html" title=" " alt="" coords="181,5,389,45"/>
-<area shape="rect" id="node3" href="$classBervProject_1_1Validation_1_1Common_1_1FileExtensionAttributeValidation.html" title=" " alt="" coords="181,69,389,109"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,46,133,72"/>
+<area shape="rect" id="Node000001" href="$classBervProject_1_1Validation_1_1Common_1_1AllowedContentTypeAttribute.html" title=" " alt="" coords="181,5,388,46"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="148,44,180,39,181,44,148,49"/>
+<area shape="rect" id="Node000002" href="$classBervProject_1_1Validation_1_1Common_1_1FileExtensionAttributeValidation.html" title=" " alt="" coords="181,71,388,111"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="148,68,180,73,180,78,148,73"/>
 </map>
